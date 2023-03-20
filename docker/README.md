@@ -7,26 +7,28 @@ Based on your OS, pick the suitable tutorials below and install Docker
 - Windows: https://docs.docker.com/desktop/install/windows-install/
 
 ### Step 2: Building a container to run our app
+cd to folder `docker` initially.  
 Run the following command in your terminal
 ```
-docker build -t all_newbie_ai4life/round1 .
+sudo docker build -t all_newbie_ai4life/round1 .
 ```
 
 This will build a container using descriptions in `Dockerfile` and install what's necessary to run our project. For further information, please check out the content of `Dockerfile`.
 
-If you are on Linux system, just running `bash build.sh` is enough.
+If you are on Linux system, just running `sudo bash build.sh` is enough.
 
 
 ### Step 3: Start up container
+
 Run the following command to start up your Jupyter notebook server that allows us to inspect Jupyter notebooks.
 ```
-docker run --rm --name all_newbie_round_1 \
+sudo docker run --rm --name all_newbie_round_1 \
 	-e JUPYTER_TOKEN=1234 \
 	-p 8888:8888 \
 	-v ./output/:/home/jovyan/notebooks/output all_newbie_ai4life/round1
 ```
 
-If you are on Linux system, just running `bash run.sh` is enough.
+If you are on Linux system, just running `sudo bash run.sh` is enough.
 
 Your terminal should output logs of the server:
 ![img](./images/server-started.png)
