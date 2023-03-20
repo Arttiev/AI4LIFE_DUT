@@ -6,7 +6,10 @@ Based on your OS, pick the suitable tutorials below and install Docker
 - Linux: https://docs.docker.com/engine/install/ubuntu/
 - Windows: https://docs.docker.com/desktop/install/windows-install/
 
+
 ### Step 2: Building a container to run our app
+Be sure that you have `git clone` our project. cd to folder `docker` initially.
+If you are using Ubuntu, `sudo` should be added before each command. 
 Run the following command in your terminal
 ```
 docker build -t all_newbie_ai4life/round1 .
