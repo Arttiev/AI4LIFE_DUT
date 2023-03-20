@@ -7,6 +7,7 @@ Based on your OS, pick the suitable tutorials below and install Docker
 - Windows: https://docs.docker.com/desktop/install/windows-install/
 
 ### Step 2: Building a container to run our app
+If you are on Linux system, `sudo` should be add before each command.
 Run the following command in your terminal
 ```
 docker build -t all_newbie_ai4life/round1 .
